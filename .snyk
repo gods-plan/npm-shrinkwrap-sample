@@ -1,0 +1,12 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - ngx-fabric8-wit > lodash:
+        patched: '2019-07-03T22:37:33.650Z'
+    - ngx-login-client > lodash:
+        patched: '2019-07-03T22:37:33.650Z'
+    - ngx-fabric8-wit > ngx-login-client > lodash:
+        patched: '2019-07-03T22:37:33.650Z'
